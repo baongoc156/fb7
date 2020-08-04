@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <form action="./success.html" method="get" id="flogin">
+            <!-- form username -->
+            <div class="form-group row">
+                <label for="username" class="col-sm-1 col-form-label">Username:</label>
+                <div class="col-sm-11 box">
+                    <input type="text" name="username" id="username" class="form-control" placeholder="Nhập username...." aria-describedby="helpId">
+                    <div class="invalid-feedback">
+                        Username không hợp lệ
+                    </div>
+                    <small id="helpId" class="text-muted">Ít nhất 6 kí tự </small>
+                </div>
+            </div>
+            <!-- form password -->
+            <div class="form-group row">
+                <label for="password" class="col-sm-1 col-form-label">Password:</label>
+                <div class="col-sm-11 box">
+                    <input type="password" class="form-control" id="password" placeholder="Nhập password.....">
+                    <div class="invalid-feedback">
+                        Password không hợp lệ
+                    </div>
+                    <small id="helpPw" class="text-muted">Ít nhất 5 kí tự, ít nhất 1 chữ hoa, số</small>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="./public/js/sitescript.js"></script>
+
+</body>
+
+</html>

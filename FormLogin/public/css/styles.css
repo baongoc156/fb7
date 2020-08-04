@@ -1,0 +1,11 @@
+.error input {
+    border: 1px solid red;
+}
+
+.error .invalid-feedback {
+    display: block;
+}
+
+.form-group .box {
+    max-width: 40%;
+}
